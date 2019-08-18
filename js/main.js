@@ -9,6 +9,7 @@ $(window).on('load resize', function(){
     layoutMode: 'fitRows'
   });
 
+  //isotopeを使ったカテゴリ別フィルタ
   const category = document.getElementsByClassName('filter');
   $(".filter").on("click",function(e){
     let target = e.currentTarget;
