@@ -6,10 +6,10 @@
   font-family:'Roboto', sans-serif;
 }
 
-body{
-  background-image: radial-gradient(#f8f6f6 20%, transparent 40%);
-  background-size: 10px 10px;
-}
+/* body{
+  /* background-image: radial-gradient(#f8f6f6 20%, transparent 40%);
+  background-size: 10px 10px; */
+/* } */ 
 
 .navbar-nav > li > a {
   font-size: 28px !important;
@@ -76,7 +76,7 @@ h6{
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top:20px;
 }
 
@@ -111,7 +111,6 @@ h6{
   border-radius: 4px;
 	width:100%;
   height:auto;
-	margin:10px;
   padding:5px;
 }
 .project img{
@@ -156,10 +155,9 @@ h6{
   }
   .project {
     border-radius: 4px;
-    width:30%;
+    width:33%;
     height:auto;
-    margin:10px;
-    padding:5px;
+    padding:10px;
   }
   .project img{
     width:100%;
