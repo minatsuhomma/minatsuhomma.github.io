@@ -82,8 +82,8 @@ h6{
 
 .filter {
   background-color: #ffa69e;
-	width:100px;
-  margin:5px;
+	width:18%;
+  margin:2px;
   font-size: 16px;
   color: #CE5B78;
   text-align: center;
@@ -158,6 +158,15 @@ h6{
     width:33%;
     height:auto;
     padding:10px;
+  }
+  .project video{
+    width:100%;
+    height:auto;
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
   }
   .project img{
     width:100%;
