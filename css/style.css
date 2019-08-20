@@ -113,7 +113,7 @@ h6{
   height:auto;
   padding:5px;
 }
-.project img{
+.project video,.project img{
   width:100%;
   height:auto;
   border-radius: 10px;
@@ -159,7 +159,7 @@ h6{
     height:auto;
     padding:10px;
   }
-  .project video{
+  .project video,.project img{
     width:100%;
     height:auto;
     border-radius: 10px;
@@ -168,15 +168,7 @@ h6{
     transition: .5s ease;
     backface-visibility: hidden;
   }
-  .project img{
-    width:100%;
-    height:auto;
-    border-radius: 10px;
-    opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
+
   .middle {
     transition: .5s ease;
     opacity: 0;
