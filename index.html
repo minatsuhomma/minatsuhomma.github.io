@@ -71,28 +71,54 @@
       </div>
 
     <div class="filter-container">
-      <button class="filter">Show All</button>
-      <button class="filter">UI/UX</button>
-      <button class="filter">Physical Computing</button>
-      <button class="filter">Machine Learning</button>
-      <button class="filter">Design Concept</button>
+      <button class="filter" id="filter1">Show All</button>
+      <button class="filter" >UI/UX</button>
+      <button class="filter" >Physical Computing</button>
+      <button class="filter" >Machine Learning</button>
+      <button class="filter" >Design Concept</button>
     </div>
 
     <div class="pj-container">
+      
       <div class="project physical">
-        <video class="introimg" autoplay loop muted playsinline poster="">  
-            <source type="video/webm" src="./media/mixit.webm">
-        </video>
-        <div class="middle">
-            <div class="text">Mix It</div>
-        </div>
+        <a class="js-modal-open" href="">
+          <video class="introimg" autoplay loop muted playsinline poster="">  
+              <source type="video/webm" src="./media/mixit.webm">
+          </video>
+          <div class="middle">
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+              </div> 
+              <div class="text">Mix It<br>&nbsp;&nbsp;> find out more</div>
+          </div>
+        </a>
       </div>
+      <div class="modal js-modal">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>Mix It</h2>  
+            <video class="modalimg" autoplay loop muted playsinline poster="">  
+                <source type="video/webm" src="./media/mixit.webm">
+            </video>
+            <h6>The Theme</h6>
+            <p>How might we create a joyful mixed reality experience which offers a recurring element of surprise? </p>
+            <h6>What's Mix It?</h6>
+            <p>Mix It is a cocktail mixing game, with which player can choose from three ingredients and pour them into a shaker. A combination of physical LED strip and Unity digital output on the computer screen will visualize the liquid level. Once the shaker is full, the computer mixes the cocktail and drinks it. The original cocktail is then rated by the computer.</p>
+            <h6>How is it made?</h6>
+            <p>The three ingredients are represented by Raspberry Pi which are connected to <a href="https://www.raspberrypi.org/products/sense-hat/">Sense Hats</a>. While pouring the ingredients, the pouring angle is detected. The angle values are sent to Unity via <a href="http://docs.spacebrew.cc/">Spacebrew</a>, which acts as a connecting interface. In Unity, these values are mapped to the size of the shaker. Accordingly, the liquid level is digitally visualized on the screen and the corresponding amount of LEDs are switched on.</p>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
       <div class="project physical">
         <video class="introimg" autoplay loop muted playsinline poster="./media/drawing.JPG">  
             <source type="video/webm" src="./media/drawing.webm">
         </video>
         <div class="middle">
-            <div class="text">Drawing Machine</div>
+            <div class="categ-container">
+                <div class="categ">physical computing</div>
+            </div> 
+            <div class="text">Drawing Machine<br>&nbsp;&nbsp;> find out more</div>
         </div>
       </div>
       <div class="project physical">
@@ -100,13 +126,19 @@
               <source type="video/webm" src="./media/littlek.webm">
           </video>
           <div class="middle">
-              <div class="text">The Little K</div>
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+              </div> 
+              <div class="text">The Little K<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project concept">
           <img class="introimg" src="./media/biomimicry.jpg" alt="biomimicry">
-          <div class="middle">
-              <div class="text">Nomad Shelter</div>
+          <div class="middle" id="middle-right">
+              <div class="categ-container">
+                  <div class="categ">concept</div>
+              </div> 
+              <div class="text">Nomad Shelter<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project physical">
@@ -114,15 +146,21 @@
               <source type="video/webm" src="./media/milkstir.webm">
           </video>
           <div class="middle">
-              <div class="text">Milk Stirring Machine</div>
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+              </div> 
+              <div class="text">Milk Stirring Machine<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project uxui">
           <video class="introimg" autoplay loop muted playsinline poster="./media/lupe.jpg">  
               <source type="video/webm" src="./media/lupe.webm">
           </video>
-          <div class="middle">
-              <div class="text">LUPE</div>
+          <div class="middle" id="middle-right">
+              <div class="categ-container">
+                  <div class="categ">UI/UX</div>
+              </div> 
+              <div class="text">LUPE<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project physical">
@@ -130,7 +168,10 @@
               <source type="video/webm" src="./media/airquality.webm">
           </video>
           <div class="middle">
-              <div class="text">Machine Lung</div>
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+              </div> 
+              <div class="text">Machine Lung<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project concept uiux">
@@ -138,25 +179,40 @@
               <source type="video/webm" src="./media/lifediscovery.webm">
           </video>
           <div class="middle">
-              <div class="text">Life Discovery</div>
+              <div class="categ-container">
+                <div class="categ">concept</div>
+                <div class="categ">UX/UI</div>
+              </div>
+              <div class="text">Life Discovery<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
-      <div class="project physical uiux concept">
+      <div class="project physical uiux">
           <img class="introimg" src="./media/eyetracking.png" alt="eyetracking">
-          <div class="middle">
-              <div class="text">Eye Tracking Matching</div>
+          <div class="middle" id="middle-left">
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+                  <div class="categ">UI/UX</div>
+              </div> 
+              <div class="text">Eye Tracking Matching<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project uiux concept">
           <img class="introimg" src="./media/lifecenter.jpg" alt="lifecenter">
-          <div class="middle">
-              <div class="text">Nordic Garden</div>
+          <div class="middle" id="middle-left">
+              <div class="categ-container">
+                  <div class="categ">physical computing</div>
+                  <div class="categ">concept</div>
+              </div> 
+              <div class="text">Nordic Garden<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project ml">
           <img class="introimg" src="./media/angertranslator.jpg" alt="angertranslator">
           <div class="middle">
-              <div class="text">Anger Translator</div>
+              <div class="categ-container">
+                  <div class="categ">machine learning</div>
+              </div> 
+              <div class="text">Anger Translator<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project ml">
@@ -164,7 +220,10 @@
             <source type="video/webm" src="./media/buildyourcity.webm">
           </video>
           <div class="middle">
-              <div class="text">Build Your City</div>
+              <div class="categ-container">
+                  <div class="categ">machine learning</div>
+              </div> 
+              <div class="text">Build Your City<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
       <div class="project"></div>
