@@ -249,6 +249,10 @@ h6{
     height:34px !important
   }
 
+  .modalimg{
+    width:33%;
+  }
+
   .project {
     width:33%;
     padding:10px;
