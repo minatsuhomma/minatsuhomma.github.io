@@ -73,8 +73,7 @@
 
 .modalimg{
   width:100%;
-  height:auto;
-  max-height: 250px;
+  height:250px;
   /* border-radius: 10px; */
   display: block;
   transition: .5s ease;
@@ -279,6 +278,7 @@ h6{
 
   .modalimg{
     width:33%;
+    height:auto;
   }
   .modal__content img:nth-of-type(2),.modal__content img:nth-of-type(3){
     display:block; 
