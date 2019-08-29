@@ -74,6 +74,7 @@
 .modalimg{
   width:100%;
   height:auto;
+  max-height: 250px;
   /* border-radius: 10px; */
   display: block;
   transition: .5s ease;
