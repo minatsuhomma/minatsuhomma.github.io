@@ -93,6 +93,8 @@
           </div>
         </a>
       </div>
+
+      <!-- mix it -->
       <div class="modal js-modal" id="modal-mix">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
@@ -112,7 +114,9 @@
           </div>
       </div>
 
+      <!-- drwing machine -->
       <div class="project physical">
+       <a class="js-modal-open" data-target="modal-drawing" href="">
         <video class="introimg" autoplay loop muted playsinline poster="./media/drawing.JPG">  
             <source type="video/webm" src="./media/drawing.webm">
         </video>
@@ -120,10 +124,42 @@
             <div class="categ-container">
                 <div class="categ">physical computing</div>
             </div> 
-            <div class="text">Drawing Machine<br>&nbsp;&nbsp;> find out more</div>
+            <div class="text">Wild Drawing Machine<br>&nbsp;&nbsp;> find out more</div>
         </div>
+       </a>
       </div>
 
+      <div class="modal js-modal" id="modal-drawing">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <h2>Wild Drawing Machine</h2>  
+          <div class="modalimg-container">
+            <img class="modalimg" src="./media/gif/drawing.gif" alt="drwawing-gif1">
+            <img class="modalimg" src="./media/drawing2.jpg" alt="drwawing-jpg">
+            <img class="modalimg" src="./media/gif/drawing2.gif" alt="drwawing-gif2">
+          </div>
+          <h6>The Problem</h6>
+          <p>We live in an environment which is surrounded by hazardous risk factors. While sunlight is beautiful, overexposure to the sun’s ultraviolet (UV) radiation can damage collagen fibers, accelerate aging of the skin, and even cause skin cancer. We can not escape from this environment, and it is hard to notice the unsafe level of these factors due to its invisibility.</p>
+          <h6>What's Wild Drawing Machine?</h6>
+          <p>Wild Nothing is an entity made for increasing awareness of environmental factors by eating invisible environmental data such as UV, temperature, air quality, and representing it as street data visualization.
+          </p>
+          <h6>How does it work?</h6>
+          <p>Wild Nothing 156 captures environmental data while autonomously crawling the city, expressing the current environmental status by visualizing it on the street, taking different amounts of ink of different colors to represent the gathered data of each factor. Each color represents each environmental factor:</p>
+          <p>
+            <ul>
+              <li>Red: UV</li>
+              <li>Purple: Temperature</li>
+              <li>White: Air Quality</li>
+            </ul>
+          </p>
+          <h6>The Technicalities</h6>
+          <p> Wild Nothing 156 is controlled through an Arduino Uno. An ultrasonic sensor is used to detect the distance from an object. Using a servo motor, it constantly senses the distance over 180 degrees and avoids obstacles collaborating with DC motors & wheels to navigate the environment. Three peristaltic pumps are used to extract the colored ink from the ink pack and drop the ink on the street. The amount of ink is controlled by the levels of environmental data captured by the UV sensor, temperature sensor, and air quality sensor. Also, a fan is used to spread the ink after dropping it, to represent the data in a polar grid graph.</p>
+          <p>One of our challenges was to design the optimal form of the machine to compress those bunch of motors, sensors and ink bags to fit into one compact machine, so that it can move smoothly & autonomously obtaining the form from its own needs.</p>
+          <a class="js-modal-close" href="">Close</a>
+        </div>
+    </div>
+
+      <!--the little K -->
       <div class="project physical">
         <a class="js-modal-open" data-target="modal-littlek" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/littlek.jpg">  
@@ -167,8 +203,9 @@
           </div>
       </div>
 
-
+      <!-- Nomad Shelter -->
       <div class="project concept">
+        <a class="js-modal-open" data-target="modal-nomad" href="">
           <img class="introimg" src="./media/biomimicry.jpg" alt="biomimicry">
           <div class="middle" id="middle-right">
               <div class="categ-container">
@@ -176,8 +213,49 @@
               </div> 
               <div class="text">Nomad Shelter<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+      <div class="modal js-modal" id="modal-nomad">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>Nomad Shelter</h2>  
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/biomimicry.jpg" alt="biomimicry1">
+              <img class="modalimg" src="./media/biomimicry2.png" alt="biomimicry2">
+              <img class="modalimg" src="./media/biomimicry3.png" alt="biomimicry3">
+            </div>
+            <h6>The Problem</h6>
+            <p>Due to the over population and heavy carbon footprint around world, drastic change in the global climate will occur in the near future.Most cities in coastal area will be covered by the risen sea water, forcing billions of people to relocate.</p>
+            <h6>What's Nomad Shelter?</h6>
+            <p>Nomad Shlter is designed for the people who will be forced to relocate to another location on foot, due to climate change in the coming future. It can be used by all kinds of migrants, be it individuals or families.</p>
+            <p>The core feature of the shelter:</p>
+            <ul>
+              <li>portable, lightweight tent so that it can be carried by migrants easily</li>
+              <li>low maintenance, making it self-healing to some extent</li>
+              <li>protects from hot and cold temperatures, and provides resilience against winds and other forces</li>
+              <li>modular and can be expanded for families</li>
+            </ul>
+            <h6>Design Approach</h6>
+            <p>Biomimicry is an innovation approach that seeks sustainable solutions to human challenges by emulating nature’s time-tested patterns and strategies.In order to use nature as a design mentor, we first clustered the relevant mentors and abstracted the biological strategies they used to protect themselves from the environment.
+            </p>
+            <p>Here are the overview of the strategies we found from nature mentor:</p>
+            <ul>
+              <li>Some snails have houses made of multiple layers which make them resilient</li>
+              <li>Several animals, from squirrels to lizards, have reflecting fur or scales to reflect sun light</li>
+              <li>The pangolin is hard and flexible at once due to its scales</li>
+              <li>Modular growth is quite common in nature</li>
+              <li>Many insects have fascinating wings with lots of joints which prevent wear and tear</li>
+              <li>a common self-healing mechanism in nature is filled by a liquid material from another layer</li>
+            </ul>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
+
+
+      <!-- Milk Stirring -->
       <div class="project physical">
+        <a class="js-modal-open" data-target="modal-milk" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/milkstir.png">  
               <source type="video/webm" src="./media/milkstir.webm">
           </video>
@@ -187,8 +265,28 @@
               </div> 
               <div class="text">Milk Stirring Machine<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+      <div class="modal js-modal" id="modal-milk">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>Milk Stirring Machine</h2>  
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/milkstir.png" alt="milkstir1">
+              <img class="modalimg" src="./media/gif/milkstir.gif" alt="milkstir2">
+              <img class="modalimg" src="./media/milkstir2.jpg" alt="milkstir3">
+            </div>
+            <h6>What is Milk Stirring Machine?</h6>
+            <p>Milk Stirring machine is to help you drink a coffee without manual stirring of milk or sugar.</p>
+            <h6>How does it work?</h6>
+            <p>This prototype uses Arduino with light sensor & DC motor. The motor starts circulating depending on the brightness around the sensor, which is embedded under the milk pod.</p>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
+      <!-- lupe -->
       <div class="project uxui">
+        <a class="js-modal-open" data-target="modal-lupe" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/lupe.jpg">  
               <source type="video/webm" src="./media/lupe.webm">
           </video>
@@ -198,8 +296,29 @@
               </div> 
               <div class="text">LUPE<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+      <div class="modal js-modal" id="modal-lupe">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>LUPE</h2>  
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/gif/lupe.gif" alt="lupe1">
+              <img class="modalimg" src="./media/lupe.jpg" alt="lupe2">
+              <img class="modalimg" src="./media/lupe2.jpg" alt="lupe3">
+            </div>
+            <h6>What is LUPE?</h6>
+            <p>LUPE is an educational app designed to help children build their vocabulary and speaking skills. The app has two modes: the first introduces new words, and the second tests the child’s knowledge.</p>
+            <h6>How does it work?</h6>
+            <p>To start off, the user opens the app to take a picture of an object they want to identify. The app scans the object, recognizes it, then teaches the child its name. As they continue to use the app and scan more and more words, the user builds up a history they can easily return to for review.</p>
+            <p>Pulling from the scan history, the app generates a comprehension test that helps the user retain the vocabulary they’ve learned. The app is designed to pull from out physical world into the digital space.</p>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
+      <!-- mechanical lung -->
       <div class="project physical">
+        <a class="js-modal-open" data-target="modal-lung" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/airquality.jpg">  
               <source type="video/webm" src="./media/airquality.webm">
           </video>
@@ -209,7 +328,55 @@
               </div> 
               <div class="text">Mechanical Lung<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+      <div class="modal js-modal" id="modal-lung">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>Mechanical Lung</h2>  
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/gif/airquality.gif" alt="airquality1">
+              <img class="modalimg" src="./media/airquality.jpg" alt="airquality2">
+              <img class="modalimg" src="./media/gif/airquality2.gif" alt="airquality3">
+            </div>
+            <h6>The problem</h6>
+            <p>In our everyday life, we tend to breath bad quality air without noticing, partly because it is invisible.On the other hand, breathing bad air can destroy your health – it can cause shortness of breath, increase in fatigue, aggravate asthma and other respiratory conditions, and even affect your heart system. Air pollution can be extremely hard to detect, especially indoors. People can sit indoors for long hours and breathe bad air without knowing it.</p>
+            <h6>What is Mechanical Lung?</h6>
+            <p>Mechanical Lung is an entity made for creating awareness of air quality by reading the air and expressing it with the lung’s shape & color & smoke, in a silent and unobtrusive way. It is built for indoor environments, where it sits quietly and indicates the current quality of the air.</p>
+            <h6>How does it work?</h6>
+            <p>Mechanical Lung will tell you the current air quality level by changing its behavior according to the air quality level.</p>
+            <p>There are three levels of air quality:</p>
+            <ul>
+              <li>Level 1 – Breathing</li>
+                <ul>
+                  <li>Air quality: Normal</li>
+                  <li>Meaning: You can breathe the air safely.</li>
+                  <li>Color: Blue</li>
+                  <li>Movement: Calm & stable breath</li>
+                </ul>
+              <li>Level 2 – Agitating</li>
+                <ul>
+                  <li>Air quality: Dirty</li>
+                  <li>Meaning: It’s time to open the window and refresh the air</li>
+                  <li>Color: Purple</li>
+                  <li>Movement: Fast breathing, hyperventilation.</li>
+                </ul>
+              <li>Level 3 – Critical</li>
+              <ul>
+                  <li>Air quality: Hazardous</li>
+                  <li>Meaning: The air quality is really bad. Go outside and take a break.</li>
+                  <li>Color: Red</li>
+                  <li>Movement: Dry & contracted. Smoke starts forming inside the lung.</li>
+                </ul>
+            </ul>
+            <h6>Technicalities</h6>
+            <p>Mechanical Lung 156 is controlled through an Arduino Uno. The circuit consists of two fans, one used for contracting and one for expanding. Both the fans are connected through transistors to higher voltage power sources so they can run optimally. There is also a relay connecting a hacked e-cigarette. The smoke component of the e-cigarette was taken out and controlled through the Arduino, which was used to turn it on or off through a relay. Moreover, there is an air quality sensor that detects the Carbon Dioxide parts per million in the air and responds accordingly. Finally, there is an RGB LED strip inside that lights up based on the condition of the air. All of these components were held together on a base and turned upside down to get the final outcome of a breathing, mechanical lung, as can be seen in the video.</p>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
+
+      <!-- life discovery -->
       <div class="project concept uiux">
           <video class="introimg" autoplay loop muted playsinline poster="./media/lifediscovery.png">  
               <source type="video/webm" src="./media/lifediscovery.webm">

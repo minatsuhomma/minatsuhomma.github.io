@@ -35,10 +35,27 @@
 .modal__content img:nth-of-type(2),.modal__content img:nth-of-type(3){
   display:none;
 }
+.modal__content h2{
+  border-radius: 4px;
+  padding:2px;
+  color: #CE5B78;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
+}
 .modal__content h6{
-  padding-top:5px;
+  background-color:#ffa69e;
+  color:#CE5B78;
+  border-radius: 4px;
+  padding:5px;
+  margin-top:4px;
 }
 .modal__content p{
+  margin:0px 10px;
+  font-size:10px;
+}
+.modal__content li{
+  margin:0px 30px;
   font-size:10px;
 }
 
@@ -57,7 +74,7 @@
 .modalimg{
   width:100%;
   height:auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   display: block;
   transition: .5s ease;
   opacity: 1;
@@ -265,7 +282,7 @@ h6{
   .modal__content img:nth-of-type(2),.modal__content img:nth-of-type(3){
     display:block; 
   }
-  .modal__content p{
+  .modal__content p,.modal__content li{
     font-size:16px;
   }
   .project {
