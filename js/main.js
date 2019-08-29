@@ -141,12 +141,15 @@ $(window).on('load resize', function(){
   //モーダル
   $(function(){
     $('.js-modal-open').on('click',function(){
-        $('.js-modal').fadeIn();
-        return false;
+      let target = $(this).data('target');
+      let modal = document.getElementById(target);
+      console.log(modal);
+      $(modal).fadeIn();
+      return false;
     });
     $('.js-modal-close').on('click',function(){
-        $('.js-modal').fadeOut();
-        return false;
+      $('.js-modal').fadeOut();
+      return false;
     });
 });
 });

@@ -81,7 +81,7 @@
     <div class="pj-container">
       
       <div class="project physical">
-        <a class="js-modal-open" href="">
+        <a class="js-modal-open" data-target="modal-mix" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/mixit.jpg">  
               <source type="video/webm" src="./media/mixit.webm">
           </video>
@@ -93,18 +93,20 @@
           </div>
         </a>
       </div>
-      <div class="modal js-modal">
+      <div class="modal js-modal" id="modal-mix">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
             <h2>Mix It</h2>  
-            <video class="modalimg" autoplay loop muted playsinline poster="./media/mixit.jpg">  
-                <source type="video/webm" src="./media/mixit.webm">
-            </video>
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/gif/mixitGIF1.gif" alt="mixit-gif1">
+              <img class="modalimg" src="./media/mixit.jpg" alt="mixit-jpg">
+              <img class="modalimg" src="./media/gif/mixitGIF2.gif" alt="mixit-gif2">
+            </div>
             <h6>The Theme</h6>
             <p>How might we create a joyful mixed reality experience which offers a recurring element of surprise? </p>
             <h6>What's Mix It?</h6>
             <p>Mix It is a cocktail mixing game, with which player can choose from three ingredients and pour them into a shaker. A combination of physical LED strip and Unity digital output on the computer screen will visualize the liquid level. Once the shaker is full, the computer mixes the cocktail and drinks it. The original cocktail is then rated by the computer.</p>
-            <h6>How is it made?</h6>
+            <h6>How does it work?</h6>
             <p>The three ingredients are represented by Raspberry Pi which are connected to <a href="https://www.raspberrypi.org/products/sense-hat/">Sense Hats</a>. While pouring the ingredients, the pouring angle is detected. The angle values are sent to Unity via <a href="http://docs.spacebrew.cc/">Spacebrew</a>, which acts as a connecting interface. In Unity, these values are mapped to the size of the shaker. Accordingly, the liquid level is digitally visualized on the screen and the corresponding amount of LEDs are switched on.</p>
             <a class="js-modal-close" href="">Close</a>
           </div>
@@ -121,7 +123,9 @@
             <div class="text">Drawing Machine<br>&nbsp;&nbsp;> find out more</div>
         </div>
       </div>
+
       <div class="project physical">
+        <a class="js-modal-open" data-target="modal-littlek" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/littlek.jpg">  
               <source type="video/webm" src="./media/littlek.webm">
           </video>
@@ -131,7 +135,39 @@
               </div> 
               <div class="text">The Little K<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+
+      <div class="modal js-modal" id="modal-littlek">
+          <div class="modal__bg js-modal-close"></div>
+          <div class="modal__content">
+            <h2>The Little K</h2>  
+            <div class="modalimg-container">
+              <img class="modalimg" src="./media/gif/littleK.gif" alt="littlek-gif">
+              <img class="modalimg" src="./media/littlek.jpg" alt="littlek-jpg">
+              <img class="modalimg" src="./media/gif/littleK2.gif" alt="littlek-gif2">
+            </div>
+            <h6>The Theme</h6>
+            <p>How might we make an electronic product with a positive glocal impact? </p>
+            <h6>What's Little K?</h6>
+            <p>The Little K is an extension to your home kettle, which notifies you of the amount of water you need while filling the water into the kettle. This prevents the overfilling of water, saving the energy to boil the unused water.
+            </p>
+            <h6>Background</h6>
+            <p>97% of household in UK own kettle, and use it 7 times a day on average. On the other hand, 65% of UK tea drinkers admit to over-filling their kettles. One day of extra energy use from boiling kettles is enough to light all the street lights in UK for a night.</p>
+            <h6>User research</h6>
+            <p> We conducted qualitative interview with kettle users, then noticed the tendency to overfill mainly comes from the uncertain of: </p>
+            <p>&nbsp;&nbsp;-number of cups of water being served</p>
+            <p>&nbsp;&nbsp;-size/shapes of cup will be used</p>
+            <p>
+            Also, all of interviewees agreed to pour the leftover water down the drain, after the certain period of time passed from the first boil. </p>
+            <h6>How does it work?</h6>
+            <p>Avoid over-filling of water by notifying with sound & lights when 1 cup / 2 cups / 3cups of water is filled. The Little K changes its colors / tones as the amount of water increase.</p>
+            <p>Facilitate re-use of the left water by notifying with user by lights. When the user bring up the kettle from the boiler parts, The Little K shows how many cups of water is still left in the kettle.</p>
+            <a class="js-modal-close" href="">Close</a>
+          </div>
+      </div>
+
+
       <div class="project concept">
           <img class="introimg" src="./media/biomimicry.jpg" alt="biomimicry">
           <div class="middle" id="middle-right">
