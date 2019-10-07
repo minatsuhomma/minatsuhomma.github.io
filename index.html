@@ -131,7 +131,7 @@
       <div class="project physical">
         <a class="js-modal-open" data-target="modal-mix" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/mixit.jpg">  
-              <source type="video/webm" src="./media/mixit.webm">
+              <source type="video/webm" src="./media/gif/mixitGIF1.webm">
           </video>
           <div class="middle">
               <div class="categ-container">
@@ -144,18 +144,22 @@
       <div class="modal js-modal" id="modal-mix">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>Immersive Bar</h2>  
+            <h2>Immersive Bar (2019)</h2>  
             <div class="modalimg-container">
-              <img class="modalimg" src="./media/gif/mixitGIF1.gif" alt="mixit-gif1">
-              <img class="modalimg" src="./media/mixit.jpg" alt="mixit-jpg">
-              <img class="modalimg" src="./media/gif/mixitGIF2.gif" alt="mixit-gif2">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/mixitPIC1.png" controls>
+                <source src="./media/gif/mixitGIF1.webm" type="video/webm">
+              </video>
+              <img class="modalimg" src="./media/mixit.jpg" alt="immersivebar-jpg">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/mixitPIC2.png" controls>
+                <source src="./media/gif/mixitGIF2.webm" type="video/webm">
+              </video>
             </div>
             <h6>The Theme</h6>
             <p>How might we create a joyful mixed reality experience which offers a recurring element of surprise? </p>
             <h6>What's Immersive Bar?</h6>
-            <p>Immersive Bar is a cocktail mixing game, with which player can choose from three ingredients and pour them into a shaker. A combination of physical LED strip and Unity digital output on the computer screen will visualize the liquid level. Once the shaker is full, the computer mixes the cocktail and drinks it. The original cocktail is then rated by the computer.</p>
+            <p>Immersive Bar is a cocktail mixing game, with which player can choose from three ingredients, and pours them into a cocktail shaker. A combination of physical LED strip and Unity digital output on the computer screen will visualize the liquid level. Once the shaker is full, the computer mixes the cocktail and drinks it. The original cocktail is then rated by the computer.</p>
             <h6>How does it work?</h6>
-            <p>The three ingredients are represented by Raspberry Pi which are connected to <a href="https://www.raspberrypi.org/products/sense-hat/">Sense Hats</a>. While pouring the ingredients, the pouring angle is detected. The angle values are sent to Unity via <a href="http://docs.spacebrew.cc/">Spacebrew</a>, which acts as a connecting interface. In Unity, these values are mapped to the size of the shaker. Accordingly, the liquid level is digitally visualized on the screen and the corresponding amount of LEDs are switched on.</p>
+            <p>The three ingredients are represented by <a href="https://www.raspberrypi.org/products/sense-hat/">SenseHAT</a>-equipped Raspberry Pi boards. While pouring the ingredients, the pouring angle is detected. When an ingredient is being poured, the Sense HAT’s accelerometer detects the angle, and he angle values are sent to Unity via <a href="http://docs.spacebrew.cc/">Spacebrew</a>, which acts as a connecting interface.  An LED strip - controlled by a fourth Raspberry Pi - in the shaker visualizes the liquid level. Once the shaker is full, a laptop computer - running Unity - mixes the cocktail and 'drinks' it before giving a rating. The whole setup is recorded by a camera and displayed on a screen.</p>
             <a class="js-modal-close" href="">Close</a>
           </div>
       </div>
@@ -178,11 +182,15 @@
       <div class="modal js-modal" id="modal-drawing">
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
-          <h2>Wild Drawing Machine</h2>  
+          <h2>Wild Drawing Machine (2019)</h2>  
           <div class="modalimg-container">
-            <img class="modalimg" src="./media/gif/drawing.gif" alt="drwawing-gif1">
+            <video class="modalimg" autoplay loop muted playsinline poster="./media/drawing.JPG" controls>
+              <source src="./media/gif/drawing1.webm" type="video/webm">
+            </video>
             <img class="modalimg" src="./media/drawing2.jpg" alt="drwawing-jpg">
-            <img class="modalimg" src="./media/gif/drawing2.gif" alt="drwawing-gif2">
+            <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/drawingPIC2.jpg" controls>
+              <source src="./media/gif/drawing2.webm" type="video/webm">
+            </video>
           </div>
           <h6>The Problem</h6>
           <p>We live in an environment which is surrounded by hazardous risk factors. While sunlight is beautiful, overexposure to the sun’s ultraviolet (UV) radiation can damage collagen fibers, accelerate aging of the skin, and even cause skin cancer. We can not escape from this environment, and it is hard to notice the unsafe level of these factors due to its invisibility.</p>
@@ -223,11 +231,15 @@
       <div class="modal js-modal" id="modal-littlek">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>The Little K</h2>  
+            <h2>The Little K (2019)</h2>  
             <div class="modalimg-container">
-              <img class="modalimg" src="./media/gif/littleK.gif" alt="littlek-gif">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/littkeKPIC1.JPG" controls>
+                <source src="./media/gif/littleK1.webm" type="video/webm">
+              </video>
               <img class="modalimg" src="./media/littlek.jpg" alt="littlek-jpg">
-              <img class="modalimg" src="./media/gif/littleK2.gif" alt="littlek-gif2">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/littleKPIC2.png" controls>
+                <source src="./media/gif/littleK2.webm" type="video/webm">
+              </video>
             </div>
             <h6>The Theme</h6>
             <p>How might we make an electronic product with a positive glocal impact? </p>
@@ -264,7 +276,7 @@
       <div class="modal js-modal" id="modal-nomad">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>Nomad Shelter</h2>  
+            <h2>Nomad Shelter (2019)</h2>  
             <div class="modalimg-container">
               <img class="modalimg" src="./media/biomimicry.jpg" alt="biomimicry1">
               <img class="modalimg" src="./media/biomimicry2.png" alt="biomimicry2">
@@ -303,7 +315,7 @@
       <div class="project physical">
         <a class="js-modal-open" data-target="modal-milk" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/milkstir.png">  
-              <source type="video/webm" src="./media/milkstir.webm">
+              <source type="video/webm" src="./media/gif/milkstir.webm">
           </video>
           <div class="middle">
               <div class="categ-container">
@@ -316,10 +328,12 @@
       <div class="modal js-modal" id="modal-milk">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>Milk Stirring Machine</h2>  
+            <h2>Milk Stirring Machine (2017)</h2>  
             <div class="modalimg-container">
               <img class="modalimg" src="./media/milkstir.png" alt="milkstir1">
-              <img class="modalimg" src="./media/gif/milkstir.gif" alt="milkstir2">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/milkstir.png" controls>
+                <source src="./media/gif/milkstir.webm" type="video/webm">
+              </video>
               <img class="modalimg" src="./media/milkstir2.jpg" alt="milkstir3">
             </div>
             <h6>What is Milk Stirring Machine?</h6>
@@ -347,9 +361,11 @@
       <div class="modal js-modal" id="modal-lupe">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>LUPE</h2>  
+            <h2>LUPE (2019)</h2>  
             <div class="modalimg-container">
-              <img class="modalimg" src="./media/gif/lupe.gif" alt="lupe1">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/lupe.jpg" controls>
+                <source src="./media/gif/lupe.webm" type="video/webm">
+              </video>
               <img class="modalimg" src="./media/lupe.jpg" alt="lupe2">
               <img class="modalimg" src="./media/lupe2.jpg" alt="lupe3">
             </div>
@@ -366,7 +382,7 @@
       <div class="project physical">
         <a class="js-modal-open" data-target="modal-lung" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/airquality.jpg">  
-              <source type="video/webm" src="./media/airquality.webm">
+              <source type="video/webm" src="./media/gif/airquality1.webm">
           </video>
           <div class="middle">
               <div class="categ-container">
@@ -379,11 +395,15 @@
       <div class="modal js-modal" id="modal-lung">
           <div class="modal__bg js-modal-close"></div>
           <div class="modal__content">
-            <h2>Mechanical Lung</h2>  
+            <h2>Mechanical Lung (2019)</h2>  
             <div class="modalimg-container">
-              <img class="modalimg" src="./media/gif/airquality.gif" alt="airquality1">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/airqualityPIC1.jpg" controls>
+                <source src="./media/gif/airquality1.webm" type="video/webm">
+              </video>
               <img class="modalimg" src="./media/airquality.jpg" alt="airquality2">
-              <img class="modalimg" src="./media/gif/airquality2.gif" alt="airquality3">
+              <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/airqualityPIC3.jpg" controls>
+                <source src="./media/gif/airquality2.webm" type="video/webm">
+              </video>
             </div>
             <h6>The problem</h6>
             <p>In our everyday life, we tend to breath bad quality air without noticing, partly because it is invisible.On the other hand, breathing bad air can destroy your health – it can cause shortness of breath, increase in fatigue, aggravate asthma and other respiratory conditions, and even affect your heart system. Air pollution can be extremely hard to detect, especially indoors. People can sit indoors for long hours and breathe bad air without knowing it.</p>
@@ -424,8 +444,9 @@
 
       <!-- life discovery -->
       <div class="project concept uiux">
+        <a class="js-modal-open" data-target="modal-lifed" href="">
           <video class="introimg" autoplay loop muted playsinline poster="./media/lifediscovery.png">  
-              <source type="video/webm" src="./media/lifediscovery.webm">
+              <source type="video/webm" src="./media/gif/life-discovery.webm">
           </video>
           <div class="middle">
               <div class="categ-container">
@@ -434,7 +455,30 @@
               </div>
               <div class="text">Life Discovery<br>&nbsp;&nbsp;> find out more</div>
           </div>
+        </a>
       </div>
+      <div class="modal js-modal" id="modal-lifed">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <h2>Life Discovery (2016)</h2>  
+          <div class="modalimg-container">
+            <img class="modalimg" src="./media/lifediscovery.png" alt="lifediscovery1">
+            <video class="modalimg" autoplay loop muted playsinline poster="./media/gif/life-discoveryPIC2.jpg" controls>
+              <source src="./media/gif/life-discovery.webm" type="video/webm">
+            </video>
+            <img class="modalimg" src="./media/gif/life-discoveryPIC3.jpg" alt="lifediscovery3">
+          </div>
+          <h6>The Challenge</h6>
+          <p>“What do you want to do when you grow up?”
+            Most people don’t have clear answer for this very popular question, and most people struggle to find any clues to find the answer.</p>
+          <h6>What is Life Discovery?</h6>
+          <p>The “Life Discovery” will help those younger people find their own future paths, by showing a real life story of a person who has similar personal traits  or experience with them. Due to the similarity, it is easier to reflect that life story against his/her personal path, encouraging them to pursue the life they want. This prototype was created with 5 team members during a 2-day Hackathon with 180 participants, and this service won the 1st prize in the Hackathon.</p>
+          <a class="js-modal-close" href="">Close</a>
+        </div>
+    </div>
+
+
+      <!-- EyeTracking -->
       <div class="project physical uiux">
           <img class="introimg" src="./media/eyetracking.png" alt="eyetracking">
           <div class="middle" id="middle-left">
@@ -445,6 +489,8 @@
               <div class="text">Eye Tracking Matching<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
+
+      <!-- LifeCenter -->
       <div class="project uiux concept">
           <img class="introimg" src="./media/lifecenter.jpg" alt="lifecenter">
           <div class="middle" id="middle-left">
@@ -455,6 +501,8 @@
               <div class="text">Nordic Garden<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
+
+      <!-- Anger Translator -->
       <div class="project ml">
           <img class="introimg" src="./media/angertranslator.jpg" alt="angertranslator">
           <div class="middle">
@@ -464,6 +512,8 @@
               <div class="text">Anger Translator<br>&nbsp;&nbsp;> find out more</div>
           </div>
       </div>
+
+      <!-- BuildYourCity -->
       <div class="project ml">
           <video class="introimg" autoplay loop muted playsinline poster="./media/buildyourcity.png">  
             <source type="video/webm" src="./media/buildyourcity.webm">
